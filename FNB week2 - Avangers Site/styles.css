@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+.avengers-nav {
+  padding: 15px 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.avengers-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.avengers-nav a {
+  color: #da1515;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.avengers-nav a:hover {
+  color: #a15757;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: url('media/backgroundimage.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding-top: 80px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 20px 30px;
+}
+
+.avenger {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.avenger:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #aa7171;
+}
+
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0c10;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+
+/* Hero Section */
+.avengers-hero {
+  background-image: url('media/backgroundimage.jpg'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: crimson;
+  margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  color: #c5c6c7;
+  margin-bottom: 2rem;
+}
+
+/* Boxes */
+.avenger-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box {
+  background: radial-gradient(circle at top left, #330000, #0a0a0a);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid crimson;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+ .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #720707;
+}
+
+.box h2 {
+  color: crimson;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.box ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.quote-box blockquote {
+  font-style: italic;
+  color: #c5c6c7;
+  border-left: 4px solid crimson;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+/* Responsive Text Sizes */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+}
+
+/* Reset and body setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('media/backgroundimage.jpg');
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header section */
+.hero-header {
+  text-align: center;
+  background: radial-gradient(circle at top left, #330000, #0a0a0a);
+  padding: 2rem;
+  border-bottom: 3px solid crimson;
+}
+
+.hero-header h1 {
+  font-size: 2.5rem;
+  color: crimson;
+}
+
+.hero-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Main section layout */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+/* Contact form */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: radial-gradient(circle at top left, #330000, #0a0a0a);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(129, 117, 120);
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+  color: crimson;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background: radial-gradient(circle at top left, #330000, #0a0a0a);
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 0.7rem 1.5rem;
+  background: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #8b5252;
+}
+
+/* Contact info */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  background: radial-gradient(circle at top left, #330000, #0a0a0a);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(163, 132, 138);
+}
+
+.contact-info h2,
+.contact-info h3 {
+  color: crimson;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.contact-info ul li {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.contact-info ul li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: gold;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.contact-info a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: radial-gradient(circle at top left, #330000, #0a0a0a);
+  color: #fff;
+  border-top: 2px solid crimson;
+}

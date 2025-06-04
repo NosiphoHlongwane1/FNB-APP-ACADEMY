@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <title>Hulk</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top left, #003300, #001a00);
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    .avengers-nav {
+      padding: 15px 20px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .avengers-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+    
+    .avengers-nav a {
+      color: #2e8b57;
+      text-decoration: none;
+      font-size: 20px; 
+    }
+    
+    .avengers-nav a:hover {
+      color: #458862
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      gap: 3rem;
+      flex-wrap: wrap;
+      background: radial-gradient(circle at top left, #003300, #001a00);
+    }
+
+    .hero-text {
+      flex: 1;
+      max-width: 500px;
+      padding: 2rem;
+      background: rgba(0, 128, 0, 0.1);
+      border: 1px solid rgba(0, 255, 0, 0.2);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 128, 0, 0.4);
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      color: #7fff00;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00cc00;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #eaffea;
+      text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+    }
+
+    .hero-image {
+      flex: 1;
+      padding: 2rem;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 255, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.05);
+    }
+
+     .symbol-links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .symbol-links a {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.2); 
+      text-decoration: none;
+      text-shadow: 0 0 3px #0a9c42, 0 0 6px #4a9950, 0 0 10px #13f84c;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .symbol-links a:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    }
+
+     @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-text, .hero-image {
+        max-width: 90%;
+      }
+
+      .symbol-links {
+        gap: 15px;
+        margin-top: 2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="avengers-nav">
+  <ul>
+    <li><a href="index.html"><i class="fas fa-home" aria-label="Home"></i></a></li>
+    <li><a href="factsheet.html"><i class="fas fa-book" aria-label="Factsheet"></i></a></li>
+    <li><a href="contacts.html"><i class="fas fa-envelope" aria-label="Contacts"></i></a></li>
+  </ul>
+</nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>HULK</h1>
+      <h6><em>I'm just a kid from Brooklyn</em></h6>
+      <br>
+      <p>💥 The green Goliath of the Avengers, Hulk is a force of nature driven by rage. With superhuman strength and an indestructible body, he smashes through anything in his path to protect the innocent and defeat evil.</p>
+    </div>
+    <div class="hero-image">
+      <img src="media/hulkcover.jpg" alt="Hulk">
+    </div>
+  </section>
+  <div class="symbol-links">
+     <a href="thor.html" title="Thor">⚡</a>
+     <a href="ironman.html" title="Iron Man">🛡️</a>
+     <a href="hulk.html" title="Hulk">💥</a>
+     <a href="hawkeye.html" title="Hawkeye">🎯 </a>
+     <a href="captainamerica.html" title="Captain America">⭐</a>
+     <a href="blackwidow.html" title="Black Widow">🕷️</a>
+    </div>
+</body>
+</html>
