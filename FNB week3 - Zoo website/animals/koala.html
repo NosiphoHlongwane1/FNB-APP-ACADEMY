@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Pine City Zoo | Koala</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('../images/koala.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(125, 85, 25, 0.5); /* warm brown overlay similar to giraffe */
+      z-index: 1;
+    }
+
+    .info {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      padding: 2rem;
+      border-radius: 12px;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .info h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #4e3007;
+      text-transform: uppercase;
+    }
+
+    .info p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .info .location {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #ffcc66;
+    }
+
+    .side-nav {
+      position: fixed;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 3;
+    }
+
+    .side-nav a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #000;
+      filter: grayscale(100%);
+      transition: transform 0.2s ease;
+    }
+
+    .side-nav a:hover {
+      transform: scale(1.2);
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .info {
+        max-width: 90%;
+        padding: 1.5rem;
+      }
+
+      .side-nav {
+        right: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="side-nav">
+    <a href="../animals.html" title="Animals">🐾</a>
+    <a href="elephant.html" title="Elephants">🐘</a>
+    <a href="giraffe.html" title="Giraffe">🦒</a>
+    <a href="koala.html" title="Koala">🐨</a>
+    <a href="monkey.html" title="Monkey">🐒</a>
+    <a href="pandas.html" title="Panda">🐼</a>
+    <a href="lion.html" title="Lion">🦁</a>
+    <a href="gemsbok.html" title="Gemsbok">🦌</a>
+    <a href="gorillas.html" title="Gorilla">🦍</a>
+    <a href="warthogs.html" title="Warthog">🐗</a>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="info">
+      <h1>Koala</h1>
+      <p>
+        The koala (<em>Phascolarctos cinereus</em>, or, inaccurately, koala bear) is an arboreal herbivorous marsupial native to Australia. It is the only extant representative of the family Phascolarctidae and its closest living relatives are the wombats.
+      </p>
+      <p>
+        Found in coastal areas of eastern and southern Australia, koalas inhabit Queensland, New South Wales, Victoria, and South Australia.
+      </p>
+      <p>
+        Koalas are known for their stout, tailless body, large head with round fluffy ears, and spoon-shaped nose. Their fur ranges from silver grey to chocolate brown.
+      </p>
+      <p>
+        They typically inhabit open eucalypt woodlands and feed mainly on eucalyptus leaves. Due to their low-energy diet, koalas sleep up to 20 hours a day.
+      </p>
+      <p>
+        These mostly asocial animals bond only between mothers and their young. Male koalas produce loud bellows to attract mates and assert dominance.
+      </p>
+      <p>
+        Their young, called joeys, develop in the mother’s pouch and are fully weaned by one year. Koalas face threats from disease, drought, and bushfires.
+      </p>
+      <p class="location">
+        📍 You will find the koalas next to the giraffe enclosure.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

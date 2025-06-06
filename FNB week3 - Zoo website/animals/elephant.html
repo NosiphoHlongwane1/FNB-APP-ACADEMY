@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Pine City Zoo | Elephants</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('../images/elephant.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 30, 20, 0.6); 
+      z-index: 1;
+    }
+
+    .info {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      padding: 2rem;
+      border-radius: 12px;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .info h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #1d1303;
+      text-transform: uppercase;
+    }
+
+    .info p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .info .location {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #b48552;
+    }
+
+    .side-nav {
+      position: fixed;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 3;
+    }
+
+    .side-nav a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #000;
+      filter: grayscale(100%);
+      transition: transform 0.2s ease;
+    }
+
+    .side-nav a:hover {
+      transform: scale(1.2);
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .info {
+        max-width: 90%;
+        padding: 1.5rem;
+      }
+
+      .side-nav {
+        right: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="side-nav">
+   <a href="../animals.html" title="Animals">🐾</a>
+    <a href="elephant.html" title="Elephants">🐘</a>
+    <a href="giraffe.html" title="Giraffe">🦒</a>
+    <a href="koala.html" title="Koala">🐨</a>
+    <a href="monkey.html" title="Monkey">🐒</a>
+    <a href="pandas.html" title="Panda">🐼</a>
+    <a href="lion.html" title="Lion">🦁</a>
+    <a href="gemsbok.html" title="Gemsbok">🦌</a>
+    <a href="gorillas.html" title="Gorilla">🦍</a>
+    <a href="warthogs.html" title="Warthon">🐗</a>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="info">
+      <h1>Elephants</h1>
+      <p>
+        Elephants are large mammals of the family Elephantidae and the order Proboscidea. Two species are traditionally recognised: the African elephant (<em>Loxodonta africana</em>) and the Asian elephant (<em>Elephas maximus</em>).
+      </p>
+      <p>
+        They are found throughout sub-Saharan Africa, South Asia, and Southeast Asia. Male African elephants are the largest land animals, reaching heights of 4 m (13 ft) and weighing up to 7,000 kg (15,000 lb).
+      </p>
+      <p>
+        Elephants use their long trunks for breathing, lifting water, and grasping objects. Their tusks help with digging and moving objects. Their ears help regulate body temperature. African elephants have larger ears and concave backs, while Asian elephants have smaller ears and convex backs.
+      </p>
+      <p>
+        Herbivorous by nature, elephants inhabit savannahs, forests, deserts, and marshes—always near a water source.
+      </p>
+      <p class="location">
+        📍 Find them at Pen E22, right next to the amphitheatre.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
